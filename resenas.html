@@ -33,15 +33,49 @@
         <section class="section">
             <div class="content-container reviews-section">
 
-                <div class="rating-box">
-                    <h2>Reseñas de clientes</h2>
-                    <p class="stars">★★★★★</p>
-                    <p>
-                        Las opiniones de nuestros clientes aparecerán aquí cuando sean aprobadas.
-                    </p>
-                </div>
+                <form class="reservation-form review-form">
+                    <h2>Deja tu reseña</h2>
 
-                <div>
+                    <input type="text" placeholder="Tu nombre" required>
+
+                    <label>Calificación</label>
+
+                    <div class="star-rating" id="starRating">
+                        <button type="button" class="star-btn" data-value="1">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="2">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="3">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="4">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="5">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+                    </div>
+
+                    <input type="hidden" id="calificacion" name="calificacion" required>
+
+                    <textarea rows="5" placeholder="Escribe tu opinión sobre La Quintita" required></textarea>
+
+                    <button type="button" class="btn-form">
+                        Enviar reseña
+                    </button>
+
+                    <small class="personas-note">
+                        Tu reseña será revisada antes de mostrarse públicamente.
+                    </small>
+                </form>
+
+                <div class="content-container">
                     <h2>Reseñas destacadas</h2>
 
                     <div class="reviews-grid">
@@ -52,7 +86,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="content-container">
                     <h2>Todas las reseñas</h2>
 
                     <div class="review-filter">
@@ -95,47 +129,7 @@
                     </div>
                 </div>
 
-                <form class="reservation-form review-form">
-                    <h2>Deja tu reseña</h2>
-
-                    <input type="text" placeholder="Tu nombre" required>
-
-                    <label>Calificación</label>
-
-                    <div class="star-rating" id="starRating">
-                        <button type="button" class="star-btn" data-value="1">
-                            <i class="bi bi-star-fill"></i>
-                        </button>
-
-                        <button type="button" class="star-btn" data-value="2">
-                            <i class="bi bi-star-fill"></i>
-                        </button>
-
-                        <button type="button" class="star-btn" data-value="3">
-                            <i class="bi bi-star-fill"></i>
-                        </button>
-
-                        <button type="button" class="star-btn" data-value="4">
-                            <i class="bi bi-star-fill"></i>
-                        </button>
-
-                        <button type="button" class="star-btn" data-value="5">
-                            <i class="bi bi-star-fill"></i>
-                        </button>
-                    </div>
-
-                    <input type="hidden" id="calificacion" name="calificacion" required>
-
-                    <textarea rows="5" placeholder="Escribe tu opinión sobre La Quintita" required></textarea>
-
-                    <button type="button" class="btn-form">
-                        Enviar reseña
-                    </button>
-
-                    <small class="personas-note">
-                        Tu reseña será revisada antes de mostrarse públicamente.
-                    </small>
-                </form>
+                
 
             </div>
         </section>
