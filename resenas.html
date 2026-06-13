@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas | La Quintita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a class="logo" href="index.html"><img src="img/logo.jpeg" alt="La Quintita"></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Instalaciones</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="reservaciones.html">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Reseñas</h1>
+            <p>Comparte tu experiencia y conoce las opiniones de otros visitantes.</p>
+        </section>
+
+        <section class="section">
+            <div class="content-container reviews-section">
+
+                <div class="rating-box">
+                    <h2>Reseñas de clientes</h2>
+                    <p class="stars">★★★★★</p>
+                    <p>
+                        Las opiniones de nuestros clientes aparecerán aquí cuando sean aprobadas.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Reseñas destacadas</h2>
+
+                    <div class="reviews-grid">
+                        <article class="review-card">
+                            <h3>Sin reseñas destacadas</h3>
+                           
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Todas las reseñas</h2>
+
+                    <div class="review-filter">
+                        <p>Ordenar reseñas</p>
+
+                        <div class="filter-stars">
+                            <button type="button" class="filter-btn active" data-filter="todas">
+                                Todas
+                            </button>
+
+                            <button type="button" class="filter-btn" data-filter="recientes">
+                                Más recientes
+                            </button>
+
+                            <button type="button" class="filter-btn" data-filter="antiguas">
+                                Más antiguas
+                            </button>
+
+                            <button type="button" class="filter-btn" data-filter="mayor">
+                                Calificación más alta
+                            </button>
+
+                            <button type="button" class="filter-btn" data-filter="menor">
+                                Calificación más baja
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="reviews-grid">
+                        <article class="review-card">
+                            <h3>Sin reseñas por mostrar</h3>
+                            
+                        </article>
+                    </div>
+
+                    <div class="section-btn">
+                        <button type="button" class="btn-form">
+                            Ver más reseñas
+                        </button>
+                    </div>
+                </div>
+
+                <form class="reservation-form review-form">
+                    <h2>Deja tu reseña</h2>
+
+                    <input type="text" placeholder="Tu nombre" required>
+
+                    <label>Calificación</label>
+
+                    <div class="star-rating" id="starRating">
+                        <button type="button" class="star-btn" data-value="1">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="2">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="3">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="4">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+
+                        <button type="button" class="star-btn" data-value="5">
+                            <i class="bi bi-star-fill"></i>
+                        </button>
+                    </div>
+
+                    <input type="hidden" id="calificacion" name="calificacion" required>
+
+                    <textarea rows="5" placeholder="Escribe tu opinión sobre La Quintita" required></textarea>
+
+                    <button type="button" class="btn-form">
+                        Enviar reseña
+                    </button>
+
+                    <small class="personas-note">
+                        Tu reseña será revisada antes de mostrarse públicamente.
+                    </small>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-card">
+                <div class="footer-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+
+                <h3>Ubicación</h3>
+
+                <a href="https://www.google.com/maps/place/M%C3%A9xico+248,+San+Juan+Bautista,+66009+Garc%C3%ADa,+N.L./@25.8215165,-100.6009494,17z/data=!4m15!1m8!3m7!1s0x86629d408b78249b:0x38c496bcc28251c6!2sM%C3%A9xico+248,+San+Juan+Bautista,+66009+Garc%C3%ADa,+N.L.!3b1!8m2!3d25.8215165!4d-100.5983745!16s%2Fg%2F11h8gpzyv8!3m5!1s0x86629d408b78249b:0x38c496bcc28251c6!8m2!3d25.8215165!4d-100.5983745?entry=ttu"
+                    target="_blank">
+                    México 248, San Juan Bautista, García, N.L.
+                </a>
+            </div>
+
+            <div class="footer-card">
+                <div class="footer-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+
+                <h3>Contacto</h3>
+
+                <a href="tel:+528184998931">
+                    +52 1 81 8499 8931
+                </a>
+            </div>
+
+            <div class="footer-card">
+                <div class="footer-icon">
+                    <i class="bi bi-facebook"></i>
+                </div>
+
+                <h3>Redes Sociales</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=61584174246293" target="_blank">
+                    Facebook
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/resenas.js"></script>
+</body>
+
+</html>
